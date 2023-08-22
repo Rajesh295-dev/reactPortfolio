@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.aboutPage {
+  min-height: 100vh;
+}
+
+.aboutContainer {
+  min-height: calc(100vh - 34px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* background-color: #75a77a; */

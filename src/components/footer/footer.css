@@ -1,0 +1,37 @@
+.footerIcons {
+  position: sticky;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #59b256;
+  width: 100%;
+
+  border-bottom: none;
+}
+
+.medialist {
+  margin-left: 0px;
+}
+
+.navIcon {
+  border-bottom: none;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  margin-left: 2px;
+  padding: 3px;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.footerList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footerList a {
+  padding: 5px;
+}

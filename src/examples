@@ -1,0 +1,308 @@
+////import React from "react"; //import "bootstrap/dist/css/bootstrap.min.css";
+//import "./contact.css"; //import Form from "react-bootstrap/Form"; ///import
+Button from "react-bootstrap/Button"; //import Footer from
+"../../components/footer/Footer"; /* export default function Contact() { return
+(
+<div>
+  <div className="formContainer">
+    <h1>Contact Page</h1>
+    <div className="container-fluid">
+      <div col col-md-4 align-items-center>
+        <h3>I would love to chat!</h3>
+        <p>
+          Thank you, for visiting my portfolio website. I would love to get in
+          touch and chat more. If you have any comments, suggestions or simply
+          would like to say hello, you are more then welcome to fill up the form
+          below.
+        </p>
+        <h4>Thanks again!</h4>
+      </div>
+      <div class="col align-items-center">
+        <Form>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Name</Form.Label>
+            <Form.Control type="Name" placeholder="Password" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter e-mail" />
+            <Form.Text className="text-muted">
+              Your email will not be shared with anyone else.
+            </Form.Text>
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicSubject">
+            <Form.Label>Subject</Form.Label>
+            <Form.Control type="Name" placeholder="Enter Subject" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicMessage">
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              as="textarea"
+              placeholder="Your Message"
+              aria-label="withtextarea"
+            />
+          </Form.Group>
+
+          <Button variant="primary" type="submit"> Submit </Button>
+        </Form>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</div>
+); } */ .formContainer { width: 100%; min-height: 100vh; display: block;
+flex-direction: column; align-content: center; justify-content: center;
+background-color: rgba(3, 40, 40, 0.871); } .container-fluid { display: flex;
+flex-direction: column; align-content: center; background-color: cornflowerblue;
+border-radius: 20px; padding: 9px; width: 500px; }
+
+<div className="footerIcons">
+  <div className="container-fluid">
+    <div class="row align-items-center">
+      <div
+        className=" col-md-4 offset-md-4 d-flex flex-wrap justify-content-flex align-items-center py-3 my-5"
+      >
+        <ul
+          className="nav col-md-4 justify-content-flex list-unstyled d-flex footer-list"
+        >
+          <a
+            className="underline"
+            href="https://github.com/Rajesh295-dev"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {" "}
+            <i className="navIcon devicon-github-original-wordmark colored">
+              {" "}
+            </i>
+          </a>
+          <a
+            className="underline"
+            href="https://www.linkedin.com/in/rajesh-gautam-472511218/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {" "}
+            <i className="navIcon devicon-linkedin-plain colored"></i>
+          </a>
+          <a
+            className="underline"
+            href="https://github.com/Rajesh295-dev"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {" "}
+            <i className="navIcon devicon-github-original-wordmark colored">
+              {" "}
+            </i>
+          </a>
+          <a
+            className="underline"
+            href="https://www.linkedin.com/in/rajesh-gautam-472511218/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {" "}
+            <i className="navIcon devicon-linkedin-plain colored"></i>
+          </a>
+        </ul>
+      </div>
+      <div className="col-md-4 d-flex align-items-center ">
+        <p className="text-xs-center">
+          &copy;{new Date().getFullYear()} Rajesh Gautam - All Right Reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slider-btn">
+  <a href="{data.project_link}" target="_blank">
+    {" "}
+    <button class="btn btn-1" className="linkButton">Project</button>{" "}
+  </a>
+
+  <a href="{data.github_link}" target="_blank">
+    {" "}
+    <button class="btn btn-1" className="linkButton">GitHub</button>{" "}
+  </a>
+</div>
+
+.carouselContents:hover .carousel-caption { } background-color: rgba(192, 192,
+192, 0.5); color: rgb(76, 130, 132); d-none d-md-block {myWorks.map((p) => (
+<ImageSlider key="{p.id}" imageSlider="{p}" />
+))} // code for 3-D carousel .flex-column { margin-top: 0; height: 100vh;
+background-color: #2a2734; text-align: center; font-family: sans-serif; color:
+#fefefe; margin-bottom: 50px; } .container { position: relative; width: 320px;
+margin: 100px auto 0 auto; perspective: 1000px; } .container h1 { margin-bottom:
+10px; text-align: center; } .carousel { margin-top: 60px; position: absolute;
+width: 100%; height: 100%; transform-style: preserve-3d; animation: rotate360
+60s infinite forwards linear; } .image { position: absolute; width: 300px;
+height: 400px; top: 20px; left: 10px; right: 10px; background-size: cover;
+box-shadow: inset 0 0 0 2000px rgb(0, 0, 0, 0.5); display: flex; } span {
+margin: auto; font-size: 2rem; } @keyframes rotate360 { from { transform:
+rotate(0deg); } to { transform: rotateY(-360deg); } } .image:nth-child(1) {
+background-image: url("../clean.jpg"); transform: rotateY(0deg)
+translateZ(430px); } .image:nth-child(2) { background-image:
+url("../clean.jpg"); transform: rotateY(40deg) translateZ(430px); }
+.image:nth-child(3) { background-image: url("../clean.jpg"); transform:
+rotateY(80deg) translateZ(430px); } .image:nth-child(4) { background-image:
+url("../clean.jpg"); transform: rotateY(120deg) translateZ(430px); }
+.image:nth-child(5) { background-image: url("../clean.jpg"); transform:
+rotateY(160deg) translateZ(430px); } .image:nth-child(6) { background-image:
+url("../clean.jpg"); transform: rotateY(200deg) translateZ(430px); }
+.image:nth-child(7) { background-image: url("../clean.jpg"); transform:
+rotateY(240deg) translateZ(430px); } .image:nth-child(8) { background-image:
+url("../clean.jpg"); transform: rotateY(280deg) translateZ(430px); }
+.image:nth-child(9) { background-image: url("../clean.jpg"); transform:
+rotateY(320deg) translateZ(430px); } const CarouselContainer = () => { return (
+<Carousel className="imageslider">
+  <Carousel.Item interval="{1000}">
+    <img
+      className="d-block w-100 "
+      src="../images/image1.jpeg"
+      alt="First slider"
+    />
+    <Carousel.Caption class="carousel-caption">
+      <div className="workCaption">
+        <h3 className="carouselHeader">Welcome to the Farmer's Network!</h3>
+        <p className="carouselPara">
+          Your Online Blog for Locals looking for Fresh Produce at an affordable
+          Price!
+        </p>
+      </div>
+
+      <div class="slider-btn">
+        <a
+          href="https://github.com/kgomez1990/FarmersNetwork/blob/main/client/src/pages/Home.js"
+          target="_blank"
+        >
+          {" "}
+          <button class="btn btn-1" className="linkButton">ProjectName</button
+          >{" "}
+        </a>
+
+        <a
+          href="https://github.com/kgomez1990/FarmersNetwork/blob/main/client/src/pages/Home.js"
+          target="_blank"
+        >
+          {" "}
+          <button class="btn btn-1" className="linkButton">GitHub</button>{" "}
+        </a>
+      </div>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+); };
+
+<Carousel.Item interval="{500}">
+  <img
+    className="d-block w-100 "
+    src="../images/image1.jpeg"
+    alt="Second slide"
+  />
+  <Carousel.Caption class="carousel-caption">
+    <h3 className="carouselHeader">
+      Farm fresh food at your fingertips, while supporting local businesses!{"
+      "}
+    </h3>
+    <p className="carouselPara">
+      Farmers from all over are able to post and sell their products here!
+    </p>
+    <div class="slider-btn">
+      <a
+        href="https://github.com/kgomez1990/FarmersNetwork/blob/main/client/src/pages/Home.js"
+        target="_blank"
+      >
+        {" "}
+        <button class="btn btn-1">ProjectName</button>{" "}
+      </a>
+
+      <a
+        href="https://github.com/kgomez1990/FarmersNetwork/blob/main/client/src/pages/Home.js"
+        target="_blank"
+      >
+        {" "}
+        <button class="btn btn-1">GitHub</button>{" "}
+      </a>
+    </div>
+  </Carousel.Caption>
+</Carousel.Item>
+<Carousel.Item>
+  <img
+    className="d-block w-100 "
+    src="../images/image1.jpeg"
+    alt="Third slide"
+  />
+  <Carousel.Caption class="carousel-caption">
+    <h3 className="carouselHeader">Interested in Selling your products?</h3>
+    <p className="carouselPara">
+      Anyone selling fresh produce, preserved goods, plants etc. is able to post
+      their products for sale here. Please create an account with us and start
+      posting!!!
+    </p>
+    <div class="slider-btn">
+      <a
+        href="https://github.com/kgomez1990/FarmersNetwork/blob/main/client/src/pages/Home.js"
+        target="_blank"
+      >
+        {" "}
+        <button class="btn btn-1">ProjectName</button>{" "}
+      </a>
+
+      <a
+        href="https://github.com/kgomez1990/FarmersNetwork/blob/main/client/src/pages/Home.js"
+        target="_blank"
+      >
+        {" "}
+        <button class="btn btn-1">GitHub</button>{" "}
+      </a>
+    </div>
+  </Carousel.Caption>
+</Carousel.Item>
+
+<div className="carousel">
+  <div className="image">
+    <span>Simple1</span>
+    <button
+      href="https://github.com/kgomez1990/FarmersNetwork/blob/main/client/src/pages/Home.js"
+      class="btn btn-1"
+    >
+      ProjectName
+    </button>
+    <button
+      href="https://github.com/kgomez1990/FarmersNetwork/blob/main/client/src/pages/Home.js"
+      class="btn btn-2"
+    >
+      GitHub
+    </button>
+  </div>
+  <div className="image">
+    <span>Simple2</span>
+  </div>
+  <div className="image">
+    <span>Simple3</span>
+  </div>
+  <div className="image">
+    <span>Simple4</span>
+  </div>
+  <div className="image">
+    <span>Simple5</span>
+  </div>
+  <div className="image">
+    <span>Simple6</span>
+  </div>
+  <div className="image">
+    <span>Simple7</span>
+  </div>
+  <div className="image">
+    <span>Simple8</span>
+  </div>
+  <div className="image">
+    <span>Simple9</span>
+  </div>
+</div>

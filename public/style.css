@@ -1,0 +1,12 @@
+/* CSS slecetion to specify famillies 
+    font-family: 'Josefin Sans',
+    sans-serif; font-family: 'Lora', serif; font-family: 'Open Sans',
+    sans-serif; font-family: 'Roboto', sans-serif; font-family: 'Varela',
+    sans-serif; font-family: 'Varela Round', sans-serif; 
+  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}

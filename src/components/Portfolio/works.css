@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+.workPage {
+  min-height: 100vh;
+}
+.portfolioPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.portfolioPage h1 {
+  font-family: monospace;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.sliderLinks {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+@media all and (max-width: 30em) {
+  .sliderLinks {
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+  }
+}
+
+@media all and (max-width: 95em) {
+  .workPage {
+    min-height: 50vh;
+  }
+}

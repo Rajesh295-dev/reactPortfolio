@@ -1,0 +1,17 @@
+.flex-column {
+  margin-top: 0;
+  height: 60vh;
+
+  text-align: center;
+  font-family: monospace;
+}
+
+.workContainer {
+  text-align: center;
+  padding: 50px;
+}
+.workContainer h1 {
+  padding-top: 20px;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}

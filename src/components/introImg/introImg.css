@@ -1,0 +1,75 @@
+.introCard {
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: 200ms;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.introCard:hover {
+  gap: 24px;
+}
+.titleCard {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleCard span {
+  font-size: 30px;
+  animation: arrowBlink 5s infinite;
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+.imgCard {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 6px solid white;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.imgCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  filter: grayscale(1);
+  transition: 0.4s;
+}
+.imgCard:hover img {
+  filter: none;
+  transform: scale(1.3);
+}
+
+.subTitleCard {
+  position: relative;
+  margin-top: 10px;
+}
+
+.subTitleCard p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+@media all and (max-width: 30em) {
+  .imgCard {
+    height: 140px;
+    width: 140px;
+    border: 3px solid white;
+  }
+}

@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+.homePage {
+  min-height: 100vh;
+}
+
+.homeContainer {
+  min-height: calc(100vh - 34px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: -90px;
+}
+
+/*background-color: rgba(3, 40, 40, 0.871);*/

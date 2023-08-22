@@ -1,0 +1,93 @@
+.skillsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.skillsContainer h2 {
+  margin-bottom: 20px;
+}
+
+.skillsContainer h4 {
+  margin-top: 40px;
+}
+
+.icon {
+  font-size: 3rem;
+  display: inline-block;
+  padding-right: 2rem;
+}
+.icon:hover {
+  filter: brightness(2);
+}
+.sp {
+  font-size: 4rem;
+}
+
+.white {
+  color: lightgrey !important;
+}
+
+.printableFiles {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.wordFile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 5px;
+  cursor: pointer;
+  color: rgba(172, 180, 187, 0.654);
+}
+.wordFile a {
+  text-decoration: none;
+  font-size: medium;
+}
+
+.wordText {
+  visibility: hidden;
+  transition: 1s;
+}
+
+.wordFile:hover .wordText {
+  visibility: visible;
+  transform: translateY(-25%);
+}
+
+.pdfFile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 5px;
+  cursor: pointer;
+  color: rgba(172, 180, 187, 0.654);
+}
+.pdfText {
+  transition: 1s;
+  visibility: hidden;
+}
+
+.pdfFile:hover .pdfText {
+  visibility: visible;
+  transform: translateY(-25%);
+}
+
+@media all and (max-width: 30em) {
+  .skillsContainer {
+    padding-left: 10%;
+  }
+}

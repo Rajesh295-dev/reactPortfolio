@@ -1,0 +1,11 @@
+.toggle {
+  padding-top: 7px;
+  margin-left: 50%;
+  position: relative;
+}
+
+@media all and (max-width: 30em) {
+  .toggle {
+    margin-left: 5px;
+  }
+}
